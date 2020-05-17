@@ -1,8 +1,10 @@
-package com.example.cleanrecyclerview;
+package com.example.cleanrecyclerview.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.cleanrecyclerview.R;
 
 public class MainActivity extends AppCompatActivity {
 
