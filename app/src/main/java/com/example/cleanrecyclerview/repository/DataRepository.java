@@ -14,14 +14,9 @@ import java.util.List;
     {
         List<FoodItemsDTO> foodItemsDTO= new ArrayList<>();;
         //here you can make an API call for populating. If you are doing API call then return observables and observe them in the fragments accordingly.
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
-        foodItemsDTO.add(new FoodItemsDTO(R.drawable.ic_launcher_background,"Mayonese"));
+        foodItemsDTO.add(new FoodItemsDTO(R.drawable.sandwich,"Sandwich"));
+        foodItemsDTO.add(new FoodItemsDTO(R.drawable.pizza,"Pizza"));
+        foodItemsDTO.add(new FoodItemsDTO(R.drawable.burger,"Burger"));
         return foodItemsDTO;
     }
 }

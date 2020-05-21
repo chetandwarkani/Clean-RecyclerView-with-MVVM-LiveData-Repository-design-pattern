@@ -15,13 +15,16 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:clickable="true"
+     android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:onClick="@{(text) -> recyclerViewModel.showName(position)}"
         android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:clickable="true"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/dimen11"
-            android:focusable="true"
+            android:padding="@dimen/dimen20"
             app:cardElevation="@dimen/elevation_2"
             app:cardCornerRadius="@dimen/dimen11"
             android:layout_height="wrap_content">
@@ -39,7 +42,7 @@
                     android:layout_width="@dimen/dimen50"
                     android:layout_height="50dp"
                     tools:layout_height="50dp"
-                    android:background="@drawable/ic_launcher_background"
+                    android:src="@{recyclerViewModel.getFoodImage(position)}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"

@@ -1,5 +1,7 @@
 package com.example.cleanrecyclerview.utils;
 
+import android.widget.ImageView;
+
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,5 +25,9 @@ public class ViewBindings {
         }
         recyclerView.setAdapter(adapter);
 
+    }
+    @BindingAdapter("android:src")
+    public static void setImageResource(ImageView imageView, int resource){
+        imageView.setImageResource(resource);
     }
 }

@@ -1,6 +1,7 @@
 package com.example.cleanrecyclerview.viewmodel;
 
 import android.app.Application;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -36,6 +37,11 @@ public class RecyclerViewViewModel extends AndroidViewModel {
     {
         foodItemsDTO=dataRepository.populateItems();
         recyclerViewAdapter.notifyDataSetChanged();
+    }
+    public void showName(Integer position)
+    {
+        // Avoid using context in viewmodels. Set an Event Listener and use it in fragment using liveData.
+        Toast.makeText(getApplication(),foodItemsDTO.get(position).getFoodName(),Toast.LENGTH_LONG).show();
     }
 
     public String getFoodName(Integer position)
